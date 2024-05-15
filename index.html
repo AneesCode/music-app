@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="music playlist clone">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>music</title>
+</head>
+
+<body>
+    <header class="header-t">
+        <div class="container">
+            <div class="header-top">
+                <div class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="header-wrapper nav">
+                    <div class="img-block"><a href="#"><img src="assets/images/logo (1).png" alt=""></a></div>
+                    <div class="menu-block">
+                        <ul class="main-menu">
+                            <li class="list-item"><a href=""><img src="assets/images/search.svg" alt=""></a></li>
+                            <li class="list-item"><a href="">PLAYER</a></li>
+                            <li class="list-item"><a href="">SCHEDULE</a></li>
+                            <li class="list-item"><a href="">SETTINGS</a></li>
+                            <li class="list-item"><a href="">LOG OUT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <div class="header-b">
+        <div class="container">
+            <div class="header-bottom">
+                <audio src="" id="song-link" autoplay="true" preload="auto"></audio>
+                <img onClick="togglePlay()" id="audio" src="assets/images/play-buttton.png" alt="">
+                <div class="music">
+                    <div class="inner-div">
+                        <img src="assets/images/130_168.jpg" alt="">
+                        <div class="content">
+                            <p>stopped</p>
+                            <h4 id="songname">Ambient Chill</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-vol">
+                    <div class="volume">
+                        <div class="icon">
+                           <img src="assets/images/volume-up-interface-symbol.png" alt="" id="vol-icon">
+                        </div>
+                        <div class="range-container">
+                            <input type="range" id="range-volume">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- body -->
+    <div class="song">
+        <ul id="ul-song">
+
+        </ul>
+    </div>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <p><span>&copy;</span> 2016-2024 Auracle Sound Ltd. Designed and developed by <a href="#">Topic</a> </p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
